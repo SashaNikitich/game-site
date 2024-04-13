@@ -74,7 +74,7 @@ img {
 
 .name {
     font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     color: var(--text-color);
 }
 
@@ -82,7 +82,7 @@ img {
     text-decoration: none;
     display: inline-block;
     color: white;
-    padding: 30px 45px;
+    padding: 20px 40px;
     margin: 10px 20px;
     border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
