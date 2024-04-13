@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    background: var(--background);
+    transition: 0.3s;
+
+    --box-shadow-color: grey;
+    --header-color: #f2f3f4;
+    --header-text-color: black;
+    --background: white;
+    --text-color: black;
+    --btn-color: #f2f3f4;
+    --btn-hover: white;
+    --background-color: black;
+    --footer-text: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    margin-bottom: 10px;
+    background-color: var(--header-color);
+    color: var(--header-text-color);
+
+}
+
+
+body.dark {
+    --box-shadow-color: grey;
+    --header-color: #282828;
+    --background: #404040;
+    --text-color: white;
+    --header-text-color: white;
+    --btn-color: #282828;
+    --btn-hover: #404040;
+    --background-color: white;
+    --footer-text: black;
+}
+
+.header-text {
+    text-align: center;
+}
+
+.cards {
+    margin-bottom: 10px;
+}
+
+.header-text {
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card {
+    justify-content: space-between;
+    padding: 2px 16px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.card:hover {
+    box-shadow: 16px 8px 16px 8px var(--box-shadow-color);
+    transition: 0.3s;
+}
+
+img {
+    max-width: 10%;
+    height: 10%;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    color: var(--text-color);
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 30px 45px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+    height: 20px;
+}
+.btn:hover {
+    background-position: right center;
+}
+
+#toggle-theme-btn {
+    width: 100px;
+    height: 100px;
+    border: 0;
+    border-radius: 50%;
+    background-color: var(--btn-color);
+}
+
+#toggle-theme-btn:hover {
+    background-color: var(--btn-hover);
+}
+
+#toggle-theme-btn img {
+    transform: scale(5);
+}
+
+footer {
+    background-color: var(--header-color);
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    border: 3px solid var(--text-color);
+}
+
+footer a:hover {
+    background-color: var(--background-color);
+    color: var(--footer-text);
+}
