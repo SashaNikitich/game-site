@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background: var(--background);
-    transition: 0.3s;
+    transition: 0.5s;
 
     --box-shadow-color: grey;
     --header-color: #f2f3f4;
@@ -12,6 +12,8 @@ body {
     --btn-hover: white;
     --background-color: black;
     --footer-text: white;
+    --btn-background: linear-gradient(to right, #003366 0%, #013 51%, #8900FF 100%);
+
 }
 
 .header {
@@ -35,6 +37,7 @@ body.dark {
     --btn-hover: #404040;
     --background-color: white;
     --footer-text: black;
+    --btn-background: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
 }
 
 .header-text {
@@ -88,7 +91,7 @@ img {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-image: var(--btn-background);
     background-size: 200% auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, .1);
     transition: .5s;
@@ -127,9 +130,11 @@ footer a {
     font-family: 'Montserrat', sans-serif;
     padding: 10px;
     border: 3px solid var(--text-color);
+    transition: .5s;
 }
 
 footer a:hover {
+
     background-color: var(--background-color);
     color: var(--footer-text);
 }
