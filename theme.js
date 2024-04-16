@@ -3,13 +3,13 @@ const toggleThemeImg = document.getElementById('toggle-theme-img')
 
 function setDarkTheme() {
     document.body.classList.add('dark')
-    toggleThemeImg.src = 'assets/sun.png'
+    toggleThemeImg.src = 'assets/btn/sun.png'
     localStorage.theme = 'dark'
 }
 
 function setLightTheme() {
     document.body.classList.remove('dark')
-    toggleThemeImg.src = 'assets/moon.png'
+    toggleThemeImg.src = 'assets/btn/moon.png'
     localStorage.theme = 'light'
 }
 toggleThemeBtn.addEventListener('click', () => {
