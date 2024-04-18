@@ -13,7 +13,6 @@ body {
     --background-color: black;
     --footer-text: white;
     --btn-background: linear-gradient(to right, #003366 0%, #013 51%, #8900FF 100%);
-    --navigation-color: lightblue;
 }
 
 .header {
@@ -38,7 +37,7 @@ body.dark {
     --background-color: white;
     --footer-text: black;
     --btn-background: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
-    --navigation-color: cornflowerblue;
+
 }
 
 .header-text {
