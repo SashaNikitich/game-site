@@ -13,7 +13,6 @@ body {
     --background-color: black;
     --footer-text: white;
     --btn-background: linear-gradient(to right, #003366 0%, #013 51%, #8900FF 100%);
-
 }
 
 .header {
@@ -38,6 +37,7 @@ body.dark {
     --background-color: white;
     --footer-text: black;
     --btn-background: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+
 }
 
 .header-text {
@@ -137,4 +137,53 @@ footer a:hover {
 
     background-color: var(--background-color);
     color: var(--footer-text);
+}
+
+.menu {
+
+    padding: 35vh 25px;
+    position: fixed;
+    background: rgb(20, 20, 20, 0.5);
+    height: 100%;
+    backdrop-filter: blur(16px);
+    border-right: 5px solid var(--background-color);
+    left: -309px;
+}
+
+.menu:hover {
+    left: 0;
+    transition: 0.5s;
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: #fcfffc;
+}
+
+.list {
+    margin-bottom: 50px;
+}
+
+.list a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #fcfffc;
+    text-decoration: none;
+    border-left: 2px;
+    padding-left: 5px;
+    transition: all 0.3s ease;
+}
+
+.list a:hover {
+    border-left: 2px solid #fcfffc;
+    padding-left: 10px;
+    transition: all 0.3s;
+}
+
+.list li {
+    list-style: none;
+    margin-bottom: 30px;
 }
