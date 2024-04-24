@@ -15,6 +15,10 @@ body {
     --btn-background: linear-gradient(to right, #003366 0%, #013 51%, #8900FF 100%);
 }
 
+.hide {
+    display: none;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
